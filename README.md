@@ -1,1 +1,0 @@
-# jamesgualtieri.github.io
