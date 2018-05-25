@@ -9,16 +9,25 @@
     cursor: url("../media/me.png") 20 27, pointer;
 }
 
+div.main-body{
+    margin-top: 200px;
+    position: relative;
+}
+
 body {
     color: #4A5A6A;
     background-color: #2B2B2B;
     margin:0px;
+    padding:0;
+    
     
 }
 
-svg {
-    margin:0px;
-}
+svg { position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100% }
 
 a:link {
     color: #4A5A6A;
@@ -52,9 +61,8 @@ a:hover {
 .rev6 {
     animation: rev 7.9s;
 }
-
 .subt-fade {
-    animation: fade 10s;
+    animation: fade-in 10s;
 }
 
 @keyframes blink {
@@ -70,14 +78,12 @@ a:hover {
     50.1% {opacity: 1;}
     100% {opacity: 1;}
 }
-
-@keyframes fade {
+@keyframes fade-in {
     0% {opacity: 0;}
     50% {opacity: 0;}
     70% {opacity: 1;}
     100% {opacity: 1;}
 }
-
 /*
 #BBCBCB light blue
 #586F7C darker blue
