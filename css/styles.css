@@ -1,11 +1,10 @@
 .scale { 
     width: 80%;
-    text-align: center;
+    margin: auto;
 }
 
-.center { 
-    width: 100%;
-    text-align: center;
+.yuh { 
+    width: 90%;
     margin: auto;
 }
 
