@@ -1,13 +1,17 @@
 .scale { 
     width: 80%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .yuh { 
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
+.has_my_face{
+    cursor: url("../media/me.png") 20 27, pointer;
+}
 .body {
-    padding: 5%;
+    padding: 8%;
 }
