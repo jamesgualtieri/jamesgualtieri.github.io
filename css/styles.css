@@ -1,17 +1,87 @@
-.scale { 
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.yuh { 
-    width: 100%;
-    margin: auto;
+.top-bar{
+    width: 100%
+    height: 400px;
+    background-color:#010101;
+    color:#F1F1F1;
 }
 
 .has_my_face{
     cursor: url("../media/me.png") 20 27, pointer;
 }
-.body {
-    padding: 8%;
+
+body {
+    color: #4A5A6A;
+    background-color: #2B2B2B;
+    margin:0px;
+    
 }
+
+svg {
+    margin:0px;
+}
+
+a:link {
+    color: #4A5A6A;
+}
+a:visited {
+    color: #4A5A6A;
+}
+a:hover {
+    color: white;
+}
+
+.beep-boop {
+    animation: blink 1.5s ease infinite;
+}
+
+.rev1 {
+    animation: rev 5s;
+}
+.rev2 {
+    animation: rev 5.2s;
+}
+.rev3 {
+    animation: rev 6s;
+}
+.rev4 {
+    animation: rev 6.8s;
+}
+.rev5 {
+    animation: rev 7.6s;
+}
+.rev6 {
+    animation: rev 7.9s;
+}
+
+.subt-fade {
+    animation: fade 10s;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 1;}
+    50.1% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes rev {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    50.1% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    70% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+/*
+#BBCBCB light blue
+#586F7C darker blue
+#656565 grey
+#A5B5BF pale blue
+#618985 dark teal
+*/
