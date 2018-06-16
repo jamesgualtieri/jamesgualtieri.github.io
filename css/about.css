@@ -23,6 +23,7 @@
 
 .plain:link {
     text-decoration: none;
+    color:#A4A4A4;
 }
 .plain:visited {
     text-decoration: none;
