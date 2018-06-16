@@ -1,0 +1,34 @@
+.about {
+	background-color: black
+	color: white;
+	font-family: 'Lucida Console', Monaco, monospace;
+    background-color: black;
+    color: white;
+    height: 700px;
+}
+
+.about-me {
+	height: 100%;
+	margin-right: 30%;
+	margin-left: 20%;
+}
+
+.bottom-of-page {
+	
+}
+
+.comment {
+	color:#A4A4A4;
+}
+
+.plain:link {
+    text-decoration: none;
+}
+.plain:visited {
+    text-decoration: none;
+    color:#A4A4A4;
+}
+.plain:hover {
+    text-decoration: none;
+    color: #0AFFFF;
+}
