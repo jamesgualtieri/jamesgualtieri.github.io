@@ -2,29 +2,100 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/about.css" rel="stylesheet" type="text/css">
-    <style>
-	</style>
+    <link href="../css/projects.css" rel="stylesheet" type="text/css">
+    <title>Scotty3D</title>
+    <!-- <link rel="icon" href="media/me.png"> -->
 </head>
 <body style="margin-top:0px; background-color: black">
 
 	<div class="site-bar">
 			<h2>&emsp;
-				<a href = "index.html">
+				<a href = "../index.html">
 				<span class="home-button"> <span> </span> </span> 
 				</a> / 
-				<span class="other-button"> <a href = "projects.html">
+				<span class="other-button"> <a href = "../projects.html">
 				projects
 				</a>
 				</span> / 
-				<span class="other-button"><a href = "about.html">
+				<span class="other-button"><a href = "../about.html">
 				about me
 				</a>
 			</span>
 		</h2>
 	</div>
+	<center>
+		<h1> Scotty3D </h1>
+	</center>
+	<div class = "idk-just-space">
+		Scotty3D is a three-part assignment for CMU's Computer Graphics 15-462. The intent is to fully create a 3D modeling software from a very barebones framework. The final product is able to create and edit meshes, render realistic lighting with raytracing, and create animations to move meshes.
+		<br />
+		<p>
+		The applications first part is a Mesh editor. This results in an applications capable of simple operations such as basic edge and vertex editing as well as more complex operations such as Beveling and Subdivisions.
+		By combining various operations, we are able to create a very high polygon model.
+		</p>
+		<div style="margin-left: 10%; margin-right: 10%;" >
+		<center>
+		<div class="thing"> <center>
+			<a href="projects/phish.html">
+			<img src="../media/apple.png" />
+			</a>
+			<br> Roughly Edited Mesh
+		</center></div>
+		<div class="thing"> <center>
+			<a href="projects/phish.html">
+			<img src="../media/apple-subdiv.png" />
+			</a>
+			<br> After 2 Iterations of Catmull-Clark Subdivision
+		</center></div>
+		<div> </div>
+		</center>
+		</div>
+	</div>
+	<div class = "idk-just-space">
+		<br>
+		The next part of the process involved implementing a full Ray-Tracing renderer. Implemented features include calculating light bounces, evironmental lighting, shadow tracing, and various material properties.
+		<div style="margin-left: 10%; margin-right: 10%;" >
+		<center>
+		<div class="thing"> <center>
+			<a href="projects/phish.html">
+			<img src="../media/lucy_mesh.png" />
+			</a>
+			<br> Polygonal Mesh
+		</center></div>
+		<div class="thing"> <center>
+			<a href="projects/phish.html">
+			<img src="../media/lucy_render.png" />
+			</a>
+			<br> final render
+		</center> 
+		</div>
+		<br>
+		</center>
+		<center>
+		<div class="thing2">
+			<a href="projects/phish.html">
+			<img src="../media/glass.png" />
+			</a>
+			<br> Glass Sphere with environmental light nap
+		</div>
+		</center>
+		</div>
+	</div>
+	<div class = "idk-just-space">
+		<br>
+		Finally, the project concludes with an simple mesh animation set of tools. Features include motion paths with cubic spline interpolation, wave functions on a mesh surface, and pill capsule bound animation rigs with inverse kinematics
+		<center>
+		<video width="320" height="240" controls>
+  			<source src="../media/animation.mp4" type="video/mp4">
+  		</video>
+  		<br>
+  		A simple animation showcasing the Cubic Spline Paths
+  		</center>
+  	</div>
+  	
 	<!-- <script src="js/three.js"></script>
 	<script src="js/box.js"></script> -->
+	<div style="margin: 100px;"> &nbsp;
+	</div>
 </body>
 </html>

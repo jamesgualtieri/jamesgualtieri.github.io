@@ -1,14 +1,6 @@
-.top-bar{
-    width: 100%
-    height: 400px;
-    background-color:#010101;
-    color:#F1F1F1;
-}
-
 .site-bar{
     margin-top: 0px;
     font-family: 'Lucida Console', Monaco, monospace;
-    background-color:#010101;
     color: #0AFF0A;
     width: 100%
 }
@@ -18,7 +10,7 @@
     content: "$HOME";
 }
 .home-button:hover span:after {
-    content: "\00A0 cd ~ ";
+    content: "\00A0 cd ~";
 }
 
 .other-button span:after{
@@ -45,7 +37,7 @@ div.main-body{
 
 body {
     color: #0AFF0A;
-    background-color: #010101;
+    background-color: #0F0F0F;
     margin:0px;
     padding:0;
     font-family: 'Lucida Console', Monaco, monospace;
@@ -68,10 +60,13 @@ canvas {
     height: 20%
 }
 
-.thing{
-    display: block
+.thing{    
     width:46%;
     float:left;
+}
+
+.thing2{
+    width:46%;
 }
 
 div.thing img {
@@ -79,6 +74,19 @@ div.thing img {
     height: auto;
     margin-top: 6px;
     align-content: center;
+}
+
+div.thing2 img {
+    width: 95%;
+    height: auto;
+    margin-top: 6px;
+    align-content: center;
+}
+
+.idk-just-space {
+	width: 90%;
+	margin-left: 5%;
+	float: left;
 }
 /*
 #BBCBCB light blue
