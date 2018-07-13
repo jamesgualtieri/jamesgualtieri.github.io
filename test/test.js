@@ -38,14 +38,13 @@ function navigate(event) {
 	}
 	for (var i = 0; i < len; i++){
 		var current = body.children[i];
-		var next = current.children[0];
-		console.log(next)
+		var next = current.children[1];
+		console.log(current.children[1])
 		current.className = current.className.replace("-active", "");
 		next.className = next.className.replace("-active", "");
 	}
 	var activeElem = body.children[child];
-	var activeNext = activeElem.children[0]
-	console.log(activeNext)
+	var activeNext = activeElem.children[1]
 	// var activeElem2 = body.children[child+1];
 	activeElem.className += "-active";
 	activeNext.className += "-active";

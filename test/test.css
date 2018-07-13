@@ -13,24 +13,47 @@ body {
 .term {
 	background-color: black;
 	color: #FFC23C;
-	text-shadow: 0 0 3px #ffce3c;
+	text-shadow: 0 0 10px #ffce3c;
 	font-size: 48pt;
 	padding: 0;
 	margin: 0;
 }
 
+span.term p{
+	background-color: rgba(0,0,0,0);
+	color: #FFC23C;
+	text-shadow: 0 0 10px #ffce3c;
+	font-size: 48pt;
+	margin: 0;
+    padding: 0;
+}
+
+
 span.term-active {
 	background-color: #FFB200;
 	color: black;
-	text-shadow: 0 0 5px #050505;
+	text-shadow: 0 0 10px #050505;
 	font-size: 48pt;
+}
+
+.active-text{
+	background-color: #FFB200;
+	color: black;
+	text-shadow: 0 0 10px #050505;
+	font-size: 48pt;
+	margin: 0;
+    padding: 0;
+}
+
+div.next-active{
+	background-color: black;
 }
 
 span.info {
 	border-style: dashed;
 	border-width: 2px;
 	border-color: #FFB200;
-	background-color: black;
+	background-color: rgba(0,0,0,0);
 	color: white;
 	font-size: 24pt;
 	display: none;
@@ -57,12 +80,25 @@ span.info {
     width: 100%;
 }
 
+#about {
+	background-color: rgba(0,0,0,0);
+}
+
+#about p{
+	font-size: 24pt;
+	color: white;
+}
+
 div.spacer {
-	background-color: black;
 	height: 100pt;
 }
 
-
+.my-name-lol {
+	font-family: monaco, Consolas, 'Lucida Console', monospace;
+	font-size: 20pt;
+	line-height: 14pt;
+	color: #FFB200;
+}
 
 
 .cool-overlay{
