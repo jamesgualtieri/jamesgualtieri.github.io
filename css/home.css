@@ -12,7 +12,7 @@ a:hover {
     animation: blink 1.5s ease infinite;
 }
 
-svg { position:fixed;
+svg { 
     top:0;
     left:0;
     height:100%;
