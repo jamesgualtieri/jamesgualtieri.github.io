@@ -87,11 +87,15 @@ function toggle_open() {
     var elem = document.getElementsByClassName("next-active")[0].children[0];
     var proj = document.getElementById("projects")
     var home = document.getElementById("home")
+    var resume = document.getElementById("resume")
     if (elem == proj) {
         window.location.href = "projects.html";
     }
     else if (elem == home) {
         window.location.href = "index.html";
+    }
+    else if (elem == resume) {
+        window.location.href = "media/resume.pdf";
     }
 
     else if (elem.style.display != "block") {
@@ -109,11 +113,15 @@ function toggle_closed() {
 function toggle(id) {
     var elem = document.getElementById(id);
     play_boop()
+
     if (id == "projects") {
-        window.location.href = "projects2.html";
+        window.location.href = "projects.html";
     }
     else if (id == "home") {
-        window.location.href = "index2.html";
+        window.location.href = "index.html";
+    }
+    else if (id == "resume") {
+        window.location.href = "media/resume.pdf";
     }
     else if (elem.style.display == "block") {
         elem.style.display = "none";

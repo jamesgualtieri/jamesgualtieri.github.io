@@ -1,7 +1,7 @@
 body {
 	font-family: 'VT323', monospace;
 	background-color: black;
-	padding: 0;
+	padding: 0px;
 }
 
 .block {
@@ -14,7 +14,6 @@ body {
 	background-color: black;
 	color: #FFC23C;
 	font-size: 48pt;
-	padding: 0;
 	margin: 0;
 }
 
@@ -24,6 +23,11 @@ span.term p{
 	font-size: 48pt;
 	margin: 0;
     padding: 0;
+}
+
+span.info {
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 span.info div p{
@@ -88,6 +92,7 @@ span.info {
 
 #about {
 	background-color: rgba(0,0,0,0);
+	margin-right: 100px;
 }
 
 #about p{
