@@ -88,10 +88,10 @@ function toggle_open() {
     var proj = document.getElementById("projects")
     var home = document.getElementById("home")
     if (elem == proj) {
-        window.location.href = "projects2.html";
+        window.location.href = "projects.html";
     }
     else if (elem == home) {
-        window.location.href = "index2.html";
+        window.location.href = "index.html";
     }
 
     else if (elem.style.display != "block") {
