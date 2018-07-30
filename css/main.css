@@ -114,3 +114,8 @@ div.spacer {
 	line-height: 14pt;
 	color: #FFB200;
 }
+
+body a, a:link, a:visited, a:focus, a:hover, a:active{
+  color:inherit;
+  text-decoration:none; 
+}
