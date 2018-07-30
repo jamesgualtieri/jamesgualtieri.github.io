@@ -1,0 +1,111 @@
+body {
+	font-family: 'VT323', monospace;
+	background-color: black;
+	padding: 0;
+}
+
+.block {
+	background-color: black;
+	color: #FFB200;
+	font-size: 48pt;
+}
+
+.term {
+	background-color: black;
+	color: #FFC23C;
+	font-size: 48pt;
+	padding: 0;
+	margin: 0;
+}
+
+span.term p{
+	background-color: rgba(0,0,0,0);
+	color: #FFC23C;
+	font-size: 48pt;
+	margin: 0;
+    padding: 0;
+}
+
+span.info div p{
+	background-color: rgba(0,0,0,0);
+	color: #FFC23C;
+	font-size: 60pt;
+	margin: 0;
+    padding: 0;
+}
+
+
+span.term-active {
+	background-color: #FFB200;
+	color: black;
+	text-shadow: 0 0 10px #050505;
+	font-size: 48pt;
+}
+
+.active-text{
+	background-color: #FFB200;
+	color: black;
+	text-shadow: 0 0 10px #050505;
+	font-size: 48pt;
+	margin: 0;
+    padding: 0;
+}
+
+div.next-active{
+	background-color: black;
+}
+
+span.info {
+	border-style: dashed;
+	border-width: 2px;
+	border-color: #FFB200;
+	background-color: rgba(0,0,0,0);
+	color: white;
+	font-size: 24pt;
+	display: none;
+	padding: 10pt;
+	margin-bottom: 15pt;
+	margin-top: 10pt;
+}
+
+#footer {
+	background-color: #FFB200;
+	color: black;
+    position: fixed;
+    font-size: 16pt;
+    bottom: 0;
+    width: 100%;
+}
+
+#header {
+	position: fixed;
+	background-color: #FFB200;
+	color: black;
+    font-size: 16pt;
+    top: 0;
+    width: 100%;
+}
+
+#about {
+	background-color: rgba(0,0,0,0);
+}
+
+#about p{
+	font-size: 24pt;
+	color: white;
+}
+
+#but-home{
+	color: white;
+}
+
+div.spacer {
+	height: 100pt;
+}
+
+.my-name-lol {
+	font-family: monaco, Consolas, 'Lucida Console', monospace;
+	font-size: 20pt;
+	line-height: 14pt;
+	color: #FFB200;
+}

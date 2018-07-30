@@ -1,0 +1,90 @@
+.cool-overlay{
+	position: fixed;
+	overflow: hidden;
+}
+
+.slide {
+	animation: scan 2s linear infinite;
+
+}
+.slide1 {
+	animation: scan 2s linear 100ms infinite;
+
+}
+.slide2 {
+	animation: scan 2s linear 200ms infinite;
+
+}
+.slide3 {
+	animation: scan 2s linear 300ms infinite;
+
+}
+.slide4 {
+	animation: scan 2s linear 400ms infinite;
+
+}
+.slide5 {
+	animation: scan 2s linear 500ms infinite;
+
+}
+.slide6 {
+	animation: scan 2s linear 600ms infinite;
+
+}
+.slide7 {
+	animation: scan 2s linear 700ms infinite;
+
+}
+.slide8 {
+	animation: scan 2s linear 800ms infinite;
+
+}
+.slide9 {
+	animation: scan 2s linear 900ms infinite;
+
+}
+.slide10 {
+	animation: scan 2s linear 1000ms infinite;
+
+}
+.slide11 {
+	animation: scan 2s linear 1100ms infinite;
+
+}
+.slide12 {
+	animation: scan 2s linear 1200ms infinite;
+
+}
+.slide13 {
+	animation: scan 2s linear 1300ms infinite;
+
+}
+.slide14 {
+	animation: scan 2s linear 1400ms infinite;
+
+}
+.slide15 {
+	animation: scan 2s linear 1500ms infinite;
+
+}
+.slide16 {
+	animation: scan 2s linear 1600ms infinite;
+
+}
+.slide17 {
+	animation: scan 2s linear 1700ms infinite;
+
+}
+.slide18 {
+	animation: scan 2s linear 1800ms infinite;
+
+}
+.slide19 {
+	animation: scan 2s linear 1900ms infinite;
+
+}
+
+@keyframes scan {
+	0% {transform: translateX(0%);}
+	100% {transform: translateX(100%);}
+}
