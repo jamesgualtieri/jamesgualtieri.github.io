@@ -2,31 +2,31 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/scanny-boi.css" rel="stylesheet" type="text/css">
     <link href="../css/projects.css" rel="stylesheet" type="text/css">
-    <title>Scotty3D</title>
-    <!-- <link rel="icon" href="media/me.png"> -->
+    <link rel="icon" href="../media/3d_thumb.png">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <title>~/projects/graphics/</title>
 </head>
-<body style="margin-top:0px; background-color: black">
-
+<body style="margin-top:0px; background-color: black; color: white; ">
 	<div class="site-bar">
-			<h2>&emsp;
-				<a href = "../index.html">
+		<h2>&emsp;
+			<a href = "../index.html">
 				<span class="home-button"> <span> </span> </span> 
-				</a> / 
-				<span class="other-button"> <a href = "../projects.html">
+			</a> / 
+			<span class="other-button">
+			<a href = "../projects.html">
 				projects
-				</a>
-				</span> / 
-				<span class="other-button"><a href = "../about.html">
-				about me
-				</a>
+			</a>
 			</span>
 		</h2>
 	</div>
-	<center>
-		<h1> Scotty3D </h1>
-	</center>
-	<div class = "idk-just-space">
+	<div id="div1" style="position: absolute; margin-top: 100px; width: 90%; margin-left: 5%; margin-right: 5%">
+	<h1>
+		<center style="font-size: 48pt"> Scotty3D</center> 
+	</h1>
+	<div class = "write-up">
 		Scotty3D is a three-part assignment for CMU's Computer Graphics 15-462. The intent is to fully create a 3D modeling software from a very barebones framework. The final product is able to create and edit meshes, render realistic lighting with raytracing, and create animations to move meshes.
 		<br />
 		<p>
@@ -34,38 +34,31 @@
 		By combining various operations, we are able to create a very high polygon model.
 		</p>
 		<div style="margin-left: 10%; margin-right: 10%;" >
-		<center>
+
+		<center style = "width: 100%">
 		<div class="thing"> <center>
-			<a href="projects/phish.html">
 			<img src="../media/apple.png" />
-			</a>
 			<br> Roughly Edited Mesh
 		</center></div>
 		<div class="thing"> <center>
-			<a href="projects/phish.html">
 			<img src="../media/apple-subdiv.png" />
-			</a>
 			<br> After 2 Iterations of Catmull-Clark Subdivision
 		</center></div>
-		<div> </div>
 		</center>
+		&nbsp;
+		<br>
 		</div>
 	</div>
-	<div class = "idk-just-space">
-		<br>
+	<div class = "write-up">
 		The next part of the process involved implementing a full Ray-Tracing renderer. Implemented features include calculating light bounces, evironmental lighting, shadow tracing, and various material properties.
 		<div style="margin-left: 10%; margin-right: 10%;" >
 		<center>
 		<div class="thing"> <center>
-			<a href="projects/phish.html">
 			<img src="../media/lucy_mesh.png" />
-			</a>
 			<br> Polygonal Mesh
 		</center></div>
 		<div class="thing"> <center>
-			<a href="projects/phish.html">
 			<img src="../media/lucy_render.png" />
-			</a>
 			<br> final render
 		</center> 
 		</div>
@@ -73,15 +66,13 @@
 		</center>
 		<center>
 		<div class="thing2">
-			<a href="projects/phish.html">
 			<img src="../media/glass.png" />
-			</a>
 			<br> Glass Sphere with environmental light nap
 		</div>
 		</center>
 		</div>
 	</div>
-	<div class = "idk-just-space">
+	<div class = "write-up">
 		<br>
 		Finally, the project concludes with an simple mesh animation set of tools. Features include motion paths with cubic spline interpolation, wave functions on a mesh surface, and pill capsule bound animation rigs with inverse kinematics
 		<center>
@@ -95,7 +86,49 @@
   	
 	<!-- <script src="js/three.js"></script>
 	<script src="js/box.js"></script> -->
-	<div style="margin: 100px;"> &nbsp;
+	
 	</div>
+	<!-- <svg class="cool-overlay" width = "100%" height = "100%" style="overflow: visible;">
+        <rect width="100%" height="2%" y="0%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="5%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="10%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="15%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="20%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="25%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="30%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="35%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="40%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="45%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="50%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="55%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="60%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="65%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="70%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="75%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="80%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="85%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="90%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect width="100%" height="2%" y="95%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide" width="1%" height="4%" y="1%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide1" width="1%" height="4%" y="6%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide2" width="1%" height="4%" y="11%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide3" width="1%" height="4%" y="16%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide4" width="1%" height="4%" y="21%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide5" width="1%" height="4%" y="26%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide6" width="1%" height="4%" y="31%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide7" width="1%" height="4%" y="36%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide8" width="1%" height="4%" y="41%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide9" width="1%" height="4%" y="46%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide10" width="1%" height="4%" y="51%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide11" width="1%" height="4%" y="56%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide12" width="1%" height="4%" y="61%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide13" width="1%" height="4%" y="66%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide14" width="1%" height="4%" y="71%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide15" width="1%" height="4%" y="76%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide16" width="1%" height="4%" y="81%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide17" width="1%" height="4%" y="86%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide18" width="1%" height="4%" y="91%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+        <rect class="slide19" width="1%" height="4%" y="96%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
+    </svg> -->
 </body>
 </html>
