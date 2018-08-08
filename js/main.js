@@ -88,6 +88,7 @@ function toggle_open() {
     var proj = document.getElementById("projects")
     var home = document.getElementById("home")
     var resume = document.getElementById("resume")
+    var exp = document.getElementById("experience")
     if (elem == proj) {
         window.location.href = "projects.html";
     }
@@ -97,7 +98,9 @@ function toggle_open() {
     else if (elem == resume) {
         window.location.href = "media/resume.pdf";
     }
-
+    else if (elem == exp) {
+        window.location.href = "experience.html";
+    }
     else if (elem.style.display != "block") {
         elem.style.display = "block";
     }
@@ -119,6 +122,9 @@ function toggle(id) {
     }
     else if (id == "home") {
         window.location.href = "index.html";
+    }
+    else if (id == "experience") {
+        window.location.href = "experience.html";
     }
     else if (id == "resume") {
         window.location.href = "media/resume.pdf";
