@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <link href="css/scanny-boi.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="media/me.png">
+    <link rel="icon" href="media/icon.png">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <!-- <link rel="icon" href="media/me.png"> -->
+    <title>~/projects/</title>
 </head>
 <body>
 
@@ -53,7 +53,7 @@
         <rect class="slide18" width="1%" height="4%" y="91%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
         <rect class="slide19" width="1%" height="4%" y="96%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.1" />
     </svg>
-    <div id="div1" style="position: absolute; margin-top: 100px;">
+    <div id="div1" style="position: absolute; margin-top: 100px; width: 100%;">
         <span class="term-active" onclick="toggle('home')"><p class="active-text" id="but-home">&nbsp;home</p>
             <div class="next-active"> 
                 <span class="info" id="home">&nbsp;</span>
@@ -63,7 +63,18 @@
         <div class="next">
             <span class="info" id="graphics">
                 <div id="about">
-                    <p> blah blah blah <a href="projects/graphics.html"> click</a> to read more </p>
+                    <p> 
+                        A full 3D graphics packaged application
+                    <br>&nbsp;<p>
+                        Done as a part of my 15-462 class, the application wraps a mesh editor, a ray-tracing render, and an rigged animation suite.
+                    <br>&nbsp;<p>
+                        The Mesh editor implements many simple operations such as edge flips, and surface bevels as well as more complex operations including Catmull-Clark Subdivisions and loop subdivision.
+                    <br>&nbsp;<p> 
+                        The renderer implements full ray-tracing to display realistic lighting and shadows. In addition, path tracing to render material properties such mirrors and glass surfaces is included using the Monte-Carlo method. In addition, there is support for environmental lighting maps.
+                    <br>&nbsp;<p> 
+                        Finally, the application includes a basic set of animation functions includinging basic spline interpolation, as well as pill capsule rigged vertices with skeleton inverse kinematics. In addition, there is a surface wave equation animation to create a ripple effect.
+                    <br>&nbsp;<p> 
+                        Click <a href="projects/graphics.html" style="text-shadow: 0 0 2px #FFC23C"  onMouseOver="this.style.color='#000'" onMouseOut="this.style.color='#FFF'"> here </a> to read more as well as see photos and videos of the capabilities described above
                 </div>
             </span>
         </div>
@@ -72,7 +83,14 @@
         <div class="next">
             <span class="info" id="phish">
                 <div id="about">
-                    <p> blah blah blah <a href="projects/phish.html"> click</a> to read more </p>
+                    <p> Final project for 15-112 class, a short themed game
+
+                    <br>&nbsp;<p>
+                        Written in Python, the game is a simple top-down shooter that follows the avatar of a "Phishing" virus whose goal is to steal information from a user.
+                    <br>&nbsp;<p>
+                        The visuals for the game are done entirely in Python's native GUI Tkinter library. Though not inherently a great graphics package, the game showcases the ability to create a visually interesting product with simple graphical tools.
+                    <br>&nbsp;<p>
+                        Click <a href="projects/phish.html" style="text-shadow: 0 0 2px #FFC23C"  onMouseOver="this.style.color='#000'" onMouseOut="this.style.color='#FFF'"> here</a> to read more and see a video of the project in action</p>
                 </div>
             </span>
         </div>
