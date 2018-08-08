@@ -1,22 +1,27 @@
-.site-bar{
-    margin-top: 0px;
-    font-family: 'Lucida Console', Monaco, monospace;
-    color: #0AFF0A;
-    width: 100%
+.has_my_face{
+    cursor: url("../media/me.png") 20 27, pointer;
+}
+
+div .write-up {
+    font-size: 24pt;
 }
 
 .home-button span:after{
     position: relative;
     content: "$HOME";
+    font-size: 24pt;
 }
 .home-button:hover span:after {
     content: "\00A0 cd ~";
+    font-size: 24pt;
 }
 
 .other-button span:after{
+    font-size: 24pt;
 }
 .other-button:hover {
     color: #0AFFFF;
+    font-size: 24pt;
 }
 
 div.folder{
@@ -26,38 +31,26 @@ div.folder{
     transform: translateY(-50%);
 }
 
-.has_my_face{
-    cursor: url("../media/me.png") 20 27, pointer;
-}
-
-div.main-body{
-    margin-top: 200px;
-    
-}
-
-body {
-    color: #0AFF0A;
-    background-color: #0F0F0F;
-    margin:0px;
-    padding:0;
-    font-family: 'Lucida Console', Monaco, monospace;
-}
-
 a:link {
+    font-size: 24pt;
     text-decoration: none;
 }
 a:visited {
+    font-size: 24pt;
     text-decoration: none;
-    color: #0AFF0A;
 }
 a:hover {
+    font-size: 24pt;
     text-decoration: none;
-    color: #0AFFFF;
 }
 
 canvas { 
     width: 100%;
     height: 20%
+}
+
+center {
+    overflow: auto
 }
 
 .thing{    
@@ -83,11 +76,7 @@ div.thing2 img {
     align-content: center;
 }
 
-.idk-just-space {
-	width: 90%;
-	margin-left: 5%;
-	float: left;
-}
+
 /*
 #BBCBCB light blue
 #586F7C darker blue
