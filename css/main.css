@@ -1,4 +1,5 @@
-@media only screen {
+@media only screen
+and (max-width : 736px){
 	body {
 		font-family: 'VT323', monospace;
 		background-color: black;
