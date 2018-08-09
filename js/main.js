@@ -48,6 +48,7 @@ function navigate(event) {
 	}
 	var activeElem = body.children[child];
 	var activeNext = activeElem.children[1]
+    console.log(activeNext)
 	activeElem.className += "-active";
 	activeNext.className += "-active";
 }
