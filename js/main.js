@@ -52,6 +52,13 @@ function navigate(event) {
 	activeNext.className += "-active";
 }
 
+function sub_navigate(event) {
+    var key = event.keyCode;
+    if (key == 27){
+        window.history.back()
+    }
+}
+
 
 function writeCharacter(char) {
 	counter ++;
@@ -166,4 +173,10 @@ function sound(src) {
     this.stop = function(){
         this.sound.pause();
     }
+}
+
+function go_back() {
+    window.location.hash = window.location.lasthash[window.location.lasthash.length-1];
+    //blah blah blah
+    window.location.lasthash.pop();
 }
