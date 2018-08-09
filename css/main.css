@@ -7,20 +7,19 @@ body {
 .block {
 	background-color: black;
 	color: #FFB200;
-	font-size: 48pt;
+	font-size: 5vw;
 }
 
 .term {
 	background-color: black;
 	color: #FFC23C;
-	font-size: 48pt;
 	margin: 0;
 }
 
 span.term p{
 	background-color: rgba(0,0,0,0);
 	color: #FFC23C;
-	font-size: 48pt;
+	font-size: 5vw;
 	margin: 0;
     padding: 0;
 }
@@ -43,14 +42,14 @@ span.term-active {
 	background-color: #FFB200;
 	color: black;
 	text-shadow: 0 0 10px #050505;
-	font-size: 48pt;
 }
 
 .active-text{
 	background-color: #FFB200;
 	color: black;
 	text-shadow: 0 0 10px #050505;
-	font-size: 48pt;
+	/*font-size: 48pt;*/
+	font-size: 5vw;
 	margin: 0;
     padding: 0;
 }
@@ -110,12 +109,18 @@ div.spacer {
 
 .my-name-lol {
 	font-family: monaco, Consolas, 'Lucida Console', monospace;
-	font-size: 20pt;
-	line-height: 14pt;
+	font-size: 0.9vw;
+	/*line-height: 9pt;*/
 	color: #FFB200;
+	width: 100%
+	height: 20%;
 }
 
 body a, a:link, a:visited, a:focus, a:hover, a:active{
   color:inherit;
   text-decoration:none; 
+}
+
+.has-my-face{
+    cursor: url("../media/me.png") 20 27, pointer;
 }
