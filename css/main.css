@@ -112,6 +112,10 @@ and (max-width : 736px){
 		color: white;
 	}
 
+	div.spacer {
+		height: 100px;
+	}
+
 	.my-name-lol {
 		font-family: monaco, Consolas, 'Lucida Console', monospace;
 		font-size: 0.9vw;
@@ -245,7 +249,7 @@ and (max-width : 736px){
 	}
 
 	div.spacer {
-		height: 100pt;
+		height: 100px;
 	}
 
 	.my-name-lol {
