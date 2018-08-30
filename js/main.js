@@ -1,14 +1,6 @@
 var counter = 0;
 var child = 0;
 
-var heading = `
-     ██╗ █████╗ ███╗   ███╗███████╗███████╗
-     ██║██╔══██╗████╗ ████║██╔════╝██╔════╝
-     ██║███████║██╔████╔██║█████╗  ███████╗
-██   ██║██╔══██║██║╚██╔╝██║██╔══╝  ╚════██║
-╚█████╔╝██║  ██║██║ ╚═╝ ██║███████╗███████║
- ╚════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝
-`
 function test(){
 	div1 = document.getElementById("div1");
 
@@ -16,6 +8,13 @@ function test(){
 	var node = document.createTextNode("A");
 	span.appendChild(node);
 	div1.appendChild(span);
+}
+
+function handle_password(event) {
+    let key = event.keyCode;
+    if (key == 13){
+        window.location.href = "lol.html";
+    }
 }
 
 function navigate(event) {
