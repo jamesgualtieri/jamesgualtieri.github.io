@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/scanny-boi.css" rel="stylesheet" type="text/css">
+    <link href="../css/projects.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../media/phish_thumb.png">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <title>~/projects/snap/</title>
+</head>
+<body style="margin-top:0px; background-color: black; color: white;" onkeydown="sub_navigate(event)">
+    <div class="site-bar">
+        <h2>&emsp;
+            <a href = "../index.html">
+                <span class="home-button"> <span> </span> </span> 
+            </a> / 
+            <span class="other-button">
+            <a href = "../projects.html">
+                projects
+            </a>
+            </span>
+        </h2>
+    </div>
+    <div style="position: absolute; margin-top: 100px; width: 90%; margin-left: 5%; margin-right: 5%;">
+    <center>
+        <h1 style="font-size: 48pt"> Sound-based Navigational Assitant Project (SNAP)</h1>
+    </center>
+    <div class="write-up">
+        <p>
+            This is my final project for CMU's Applied Computational Intelligence Lab class, 11-291.
+        <p>
+            The original intent of the project was a fun, interactive, sound-based virtual reality experience.
+            Our intent in creating the proof of concept was to simulate interesting virtual environments and allow the user to feel like they have been transported to a new and interesting place.
+        <br />
+        <p> 
+            After going through some planning and implementation, the project was realized as follows:
+        <br>
+            The user wears a smart phone device on their head, giving the application access to both audio outputting capabilities and gyroscope tracking of the head movement.
+        <br>
+            In order for audio location to be accurate, an approximation of the Head-Related Transfer Function was used. Essentially, the brain is able to relate audio to 3-Dimensional position based on the amount of sound coming into each ear, which is effected by the shape of the human head. 
+        <br> 
+            The completed application also utilizes a bluetooth remote in the form of a Nintendo joy-con to help position the user based on movement, as the head tracking of the phone is limited to orbit controls. (Meaning the user must record when taking steps with the controller for the sound-location to be accurate)
+        <div style="margin-left: 10%; margin-right: 10%;" >
+            <center>
+            <div class="thing2">
+            <center>
+                <img src="../media/snap_head.png" />
+                <br> basic setup
+            </center>
+            </div>
+            </center>
+            <center>
+            <div class="thing2">
+            <center>
+                <img src="../media/snap_hrtf.png" />
+                <br> HRTF visualized
+            </center> 
+            </div>
+            <br>
+            </center>
+        </div>
+        SNAP was mostly a proof of concept of the capabilities of such a project, but the implications of the technology could be extended to various realms. One such idea we had come up with was to use the sound-location ability to help a sight-impared user navigate a building in real life, using various tones to indicate where walls and doorways exist.
+        <div style="margin-left: 10%; margin-right: 10%;" >
+            <center>
+            <div class="thing2">
+                <img src="../media/snap_extend.png" />
+                <br> extending the project
+            </div>
+            </center>
+        </div>
+        <br />
+    </div>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>
