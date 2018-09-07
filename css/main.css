@@ -1,5 +1,4 @@
-@media only screen
-and (max-width : 736px){
+@media only screen and (max-width: 600px) {
 	body {
 		font-family: 'VT323', monospace;
 		background-color: black;
@@ -131,7 +130,7 @@ and (max-width : 736px){
 	}
 }
 
-@media (min-width: 769px){
+@media (min-width: 601px){
 	body {
 		font-family: 'VT323', monospace;
 		background-color: black;

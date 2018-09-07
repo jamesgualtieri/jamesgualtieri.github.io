@@ -10,13 +10,6 @@ function test(){
 	div1.appendChild(span);
 }
 
-function handle_password(event) {
-    let key = event.keyCode;
-    if (key == 13){
-        window.location.href = "lol.html";
-    }
-}
-
 function navigate(event) {
 	const size = 1
 	var key = event.keyCode;
