@@ -1,86 +1,256 @@
-.has-my-face{
-    cursor: url("../media/me.png") 20 27, pointer;
-}
+@media (min-width: 769px){
+    .has-my-face{
+        cursor: url("../media/me.png") 20 27, pointer;
+    }
 
-div .write-up {
-    font-size: 24pt;
-}
+    div .write-up {
+        font-size: 24pt;
+    }
 
-.home-button span:after{
-    position: relative;
-    content: "$HOME";
-    font-size: 24pt;
-}
-.home-button:hover span:after {
-    content: "\00A0 cd ~";
-    font-size: 24pt;
-}
+    .home-button span:after{
+        position: relative;
+        content: "$HOME";
+        font-size: 24pt;
+    }
+    .home-button:hover span:after {
+        content: "\00A0 cd ~";
+        font-size: 24pt;
+    }
 
-.other-button span:after{
-    font-size: 24pt;
-}
-.other-button:hover {
-    color: #FFC23C;
-    font-size: 24pt;
-}
+    .other-button span:after{
+        font-size: 24pt;
+    }
+    .other-button:hover {
+        color: #FFC23C;
+        font-size: 24pt;
+    }
 
-div.folder{
-    margin-top: 100px;
-    margin-left: 50px;
-    position: relative;
-    transform: translateY(-50%);
-}
+    div.folder{
+        margin-top: 100px;
+        margin-left: 50px;
+        position: relative;
+        transform: translateY(-50%);
+    }
 
-a:link {
-    font-size: 24pt;
-    text-decoration: none;
-}
-a:visited {
-    font-size: 24pt;
-    text-decoration: none;
-}
-a:hover {
-    font-size: 24pt;
-    text-decoration: none;
-}
+    a:link {
+        font-size: 24pt;
+        text-decoration: none;
+    }
+    a:visited {
+        font-size: 24pt;
+        text-decoration: none;
+    }
+    a:hover {
+        font-size: 24pt;
+        text-decoration: none;
+    }
 
-canvas { 
-    width: 100%;
-    height: 20%
-}
+    canvas { 
+        width: 100%;
+        height: 20%
+    }
 
-center {
-    overflow: auto
-}
+    center {
+        overflow: auto
+    }
 
-.thing{    
-    width:46%;
-    float:left;
-}
+    .thing{    
+        width:46%;
+        float:left;
+    }
 
-.thing2{
-    width:46%;
-}
+    .thing2{
+        width:46%;
+    }
 
-div.thing img {
-    width: 95%;
-    height: auto;
-    margin-top: 6px;
-    align-content: center;
-}
+    div.thing img {
+        width: 95%;
+        height: auto;
+        margin-top: 6px;
+        align-content: center;
+    }
 
-div.thing2 img {
-    width: 95%;
-    height: auto;
-    margin-top: 6px;
-    align-content: center;
+    div.thing2 img {
+        width: 95%;
+        height: auto;
+        margin-top: 6px;
+        align-content: center;
+    }
 }
 
 
 /*
-#BBCBCB light blue
-#586F7C darker blue
-#656565 grey
-#A5B5BF pale blue
-#618985 dark teal
+iPhone pluses
 */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+
+    div .write-up {
+        font-size: 24pt;
+    }
+
+    .home-button span:after{
+        position: relative;
+        content: "$HOME";
+        font-size: 48pt;
+    }
+    .home-button:hover span:after {
+        content: "\00A0 cd ~";
+        font-size: 48pt;
+    }
+
+    .other-button span:after{
+        font-size: 48pt;
+    }
+    .other-button:hover {
+        color: #FFC23C;
+        font-size: 48pt;
+    }
+
+    .other-button span:after{
+        font-size: 48pt;
+    }
+    .other-button a {
+        font-size: 48pt;
+    }
+
+    div.folder{
+        margin-top: 100px;
+        margin-left: 50px;
+        position: relative;
+        transform: translateY(-50%);
+    }
+
+    a:link {
+        font-size: 48pt;
+        text-decoration: none;
+    }
+    a:visited {
+        font-size: 48pt;
+        text-decoration: none;
+    }
+    a:hover {
+        font-size: 48pt;
+        text-decoration: none;
+    }
+
+    canvas { 
+        width: 100%;
+        height: 20%
+    }
+
+    center {
+        overflow: auto
+    }
+
+    .thing{    
+        width:46%;
+        float:left;
+    }
+
+    .thing2{
+        width:46%;
+    }
+
+    div.thing img {
+        width: 95%;
+        height: auto;
+        margin-top: 6px;
+        align-content: center;
+    }
+
+    div.thing2 img {
+        width: 95%;
+        height: auto;
+        margin-top: 6px;
+        align-content: center;
+    }
+}
+
+/*
+iPhone 7/8
+*/
+
+div .write-up {
+        font-size: 24pt;
+    }
+
+    .home-button span:after{
+        position: relative;
+        content: "$HOME";
+        font-size: 48pt;
+    }
+    .home-button:hover span:after {
+        content: "\00A0 cd ~";
+        font-size: 48pt;
+    }
+
+    .other-button span:after{
+        font-size: 48pt;
+    }
+    .other-button:hover {
+        color: #FFC23C;
+        font-size: 48pt;
+    }
+
+    .other-button span:after{
+        font-size: 48pt;
+    }
+    .other-button a {
+        font-size: 48pt;
+    }
+
+    div.folder{
+        margin-top: 100px;
+        margin-left: 50px;
+        position: relative;
+        transform: translateY(-50%);
+    }
+
+    a:link {
+        font-size: 48pt;
+        text-decoration: none;
+    }
+    a:visited {
+        font-size: 48pt;
+        text-decoration: none;
+    }
+    a:hover {
+        font-size: 48pt;
+        text-decoration: none;
+    }
+
+    canvas { 
+        width: 100%;
+        height: 20%
+    }
+
+    center {
+        overflow: auto
+    }
+
+    .thing{    
+        width:46%;
+        float:left;
+    }
+
+    .thing2{
+        width:46%;
+    }
+
+    div.thing img {
+        width: 95%;
+        height: auto;
+        margin-top: 6px;
+        align-content: center;
+    }
+
+    div.thing2 img {
+        width: 95%;
+        height: auto;
+        margin-top: 6px;
+        align-content: center;
+    }
+}
