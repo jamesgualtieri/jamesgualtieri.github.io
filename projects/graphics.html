@@ -55,7 +55,7 @@
 		</div>
 	</div>
 	<div class = "write-up" id="renderer">
-		The next part of the process involved implementing a full Ray-Tracing renderer. Implemented features include, a full bounding volume hiearchy, calculating light bounces, evironmental lighting, shadow tracing, and various material properties.
+		The next part of the process involved implementing a full Ray-Tracing renderer. The application uses a Bounding Volume Hierarchy to accelerate ray intersection calculations. Light traces may involve absorption, light bounces via Monte Carlo Ray-tracing, shadow ray-tracing as well as environmental lighting maps, all depending on the material properties of the model and scene. The renderer has support for Lambertian, Mirror and Metallic, as well as Glass-like and transparent surfaces implemented through Bidirectional Scattering Distribution Functions. 
 		<div style="margin-left: 10%; margin-right: 10%;" >
 		<center>
 		<div class="thing"> <center>
