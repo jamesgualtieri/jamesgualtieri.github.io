@@ -16,13 +16,38 @@
 }
 
 .blog {
-    margin: 20px;
-    background-color: white;
+    margin: 5vw;
     color: #FFB200;
     font-size:2vw;
+    font-family: "Courier New";
 }
 
 .post {
+    border-style: ridge;
+    background-color: white;
+    border-color: orange;
     margin: 5px;
     font-size: 2vw;
+}
+
+.blog-link {
+    text-decoration: none;
+    text-decoration-color: orange;
+    color: orange;
+    font-size: 3vw;
+}
+
+.date {
+    margin-left: 3vw;
+    font-size:1vw;
+    color: #CCC;
+}
+
+.description {
+    border-style: ridge;
+    margin-left: 3.4vw;
+    margin-top: 1vw;
+    margin-bottom: 5vw;
+    font-size:1vw;
+    color: #EEE;
 }
