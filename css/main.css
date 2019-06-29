@@ -55,11 +55,14 @@
 		color: black;
 		text-shadow: 0 0 10px #050505;
 	}
+	span.term .active-text{
+		text-shadow: 0 0 10px #FFB200;
+	}
 
 	.active-text{
 		background-color: #FFB200;
 		color: black;
-		text-shadow: 0 0 10px #050505;
+		/*text-shadow: 0 0 10px #050505;*/
 		font-size: 48pt;
 		/*font-size: 5vw;*/
 		margin: 0;
