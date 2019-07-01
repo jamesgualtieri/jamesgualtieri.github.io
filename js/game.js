@@ -104,7 +104,6 @@ function check_loss(x, y) {
 
 function mainLoop() {
     if (!lose){
-        console.log("2 " + play_game);
         time += timerate
         if (Math.round(time*100)%5 == 1){
             y = update_rex(y);
