@@ -7,14 +7,17 @@ var rex = document.getElementById('rex');
 var floor = document.getElementById('floor');
 var line = document.getElementById('line');
 var y;
+var cact_x = 80;
 var time = 0;
 var floorval = ' - . `- ._ - `-` _,- - . `- ._ - `-` _,- - . `- ._ - `-` _,- - . `- ._ - `-` _,-';
 var bumpval = '_____________________________________________________________________________.-.'
 var ducking = false;
 
-var rex_shape1 = '&nbsp;&nbsp;&nbsp;[o ]<br>\\ / /-<br>&nbsp;}_\'-'
-var rex_shape2 = '&nbsp;&nbsp;&nbsp;[o ]<br>\\ / /-<br>&nbsp;\'-}_'
-var rex_shape3 = '<br>&nbsp;&nbsp;&nbsp;[o ]<br>==}_}_'
+var rex_shape1 = '&nbsp;&nbsp;&nbsp;[o ]<br>\\ / /-<br>&nbsp;}_\'-';
+var rex_shape2 = '&nbsp;&nbsp;&nbsp;[o ]<br>\\ / /-<br>&nbsp;\'-}_';
+var rex_shape3 = '<br>&nbsp;&nbsp;&nbsp;[o ]<br>==}_}-';
+var cactus = '&nbsp;n <br>nHn<br>&nbsp;H';
+
 function init() {
     y = 0;
 }
@@ -63,6 +66,15 @@ function update_floor(time, whichval){
     return ret;
 }
 
+function move_elem(time, id, x){
+    var x = 80 - Math.round(time*8)%80;
+    console.log(x);
+    var elem = document.getElementById(id);
+    elem.setAttribute("style", "position: absolute; margin-left:"+x+"vw");
+    return x;
+}
+
+
 function mainLoop() {
     time += timerate
     if (Math.round(time*100)%8 == 1){
@@ -70,17 +82,19 @@ function mainLoop() {
     }
     var new_floor = update_floor(time, floorval);
     var new_bump = update_floor(time, bumpval);
+    cact_x = move_elem(time, 'cact', cact_x);
 
-    console.log("y: " + y + ", time = " + time + " ducking: " + ducking);
+    // console.log("y: " + y + ", time = " + time + " ducking: " + ducking);
     var adjust = (-y) -1;
 
-    rex.setAttribute("style", "position: absolute; margin-top:"+adjust+"vh");
+    rex.setAttribute("style", "position: absolute; margin-top:"+adjust+"vw");
     if (!ducking) {
         rex.innerHTML = (Math.round(time*2)%2) ? rex_shape1 : rex_shape2;
     }
     else rex.innerHTML = rex_shape3;
     floor.innerHTML = new_floor;
     line.innerHTML = new_bump;
+    document.getElementById('cact').innerHTML = cactus;
     if (play_game) {
         requestAnimationFrame(mainLoop);
     }
