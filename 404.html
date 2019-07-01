@@ -16,21 +16,24 @@
     overflow: auto;
     height: 100%;
     "
-    onload="init()" onkeydown="play(event)" onkeyup="keyup(event)">
+    onload="init()" onkeydown="play(event)" onkeyup="keyup(event)"
+    onclick="play_mobile(event)">
 <div> Whoops we got a 404 error</div>
   <div>
     Uh oh, must be a broken link or maybe a mistyped address.
     <a href="https://www.jamesgualtieri.com" style="color: #FFC23C; text-decoration:none;" > go home? </a>
   </div>
-  <div style="margin-top: 20%;">
-   <div id = "screen" style="width: 100%; height: 100%; position: absolute;">
-      <div id="line" style="position: absolute; margin-top: 5.5vw ">
+  <div id = "score" style="margin-left: 70vw; margin-top: 10%"> &nbsp; </div>
+  <div style="margin-top: 10%;">
+    <div id = "screen" style="width: 100%; height: 100%; position: absolute;">
+        <div id="line" style="position: absolute; margin-top: 5.5vw ">
         ________________________________________________________________________________ 
-      </div>
-      <div id = "floor" style="position: absolute; margin-top: 7.5vw"> </div>
-      <div id="rex" style="position: absolute;"> &nbsp;&nbsp;&nbsp;[o ]<br>\ / /-<br>&nbsp;'-}_ </div>
-      <div id = "cact" style="position: absolute; margin-top: 1vw; margin-left: 80vw;">  </div>
-  </div>
-  <script type="text/javascript" src="js/game.js"></script>
+        </div>
+        <div id = "floor" style="position: absolute; margin-top: 7.5vw"> </div>
+        <div id="rex" style="position: absolute;"> &nbsp;&nbsp;&nbsp;[o ]<br>\ / /-<br>&nbsp;'-}_ </div>
+        <div id = "cact" style="position: absolute; margin-top: 1vw; margin-left: 80vw;">  </div>
+        <div id = "loss" style="position: absolute; margin-top: 1vw; margin-left: 40vw;">  </div>
+    </div>
+    <script type="text/javascript" src="js/game.js"></script>
 </body>
 </html>
