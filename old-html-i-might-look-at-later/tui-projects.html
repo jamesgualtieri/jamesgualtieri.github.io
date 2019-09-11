@@ -6,12 +6,9 @@
     <link href="css/scanny-boi.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="media/icon.png">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <title>~/experience/</title>
-    <!-- <link rel="icon" href="media/me.png"> -->
+    <title>~/projects/</title>
 </head>
-<body>
-
-    <body onkeydown="navigate(event)">
+<body onkeydown="navigate(event)">
     <svg class="cool-overlay" width = "100%" height = "100%" style="overflow: visible;">
         <rect width="100%" height="2%" y="0%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.2" />
         <rect width="100%" height="2%" y="5%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.2" />
@@ -60,59 +57,76 @@
                 <span class="info" id="home">&nbsp;</span>
             </div>
         </span>
-        <span class="term" onclick="toggle('mt')"><p class="active-text">&nbsp;ManTech</p>
+        <span class="term" onclick="toggle('graphics')"><p class="active-text">&nbsp;scotty3D</p>
         <div class="next">
-            <span class="info" id="mt">
+            <span class="info" id="graphics">
                 <div id="about">
-                    Security Research Intern
-                    <p> Summer 2018 </p>
-                    <br>
-                    <p> Conducted security research (reverse-engineering and network forensics) against mobile platforms and support- ing infrastructure for clients and internal audits. Utilized knowledge of software, operating systems, and computer networks to detect and exploit vulnerabilities. Performed vulnerability research on embedded systems. Created plugins for existing software platforms to aid in research. 
-                    </p>
-                    <p>
-                    Tools: Python, C++, bash scripting 
-                    </p>
+                    <p> 
+                        A full 3D graphics packaged application
+                    <br>&nbsp;<p>
+                        Done as a part of my 15-462 class, the application wraps a mesh editor, a ray-tracing render, and an rigged animation suite.
+                    <br>&nbsp;<p>
+                        The Mesh editor implements many simple operations such as edge flips, and surface bevels as well as more complex operations including Catmull-Clark Subdivisions and loop subdivision.
+                    <br>&nbsp;<p> 
+                        The renderer implements full ray-tracing to display realistic lighting and shadows. In addition, path tracing to render material properties such mirrors and glass surfaces is included using the Monte-Carlo method. In addition, there is support for environmental lighting maps.
+                    <br>&nbsp;<p> 
+                        Finally, the application includes a basic set of animation functions includinging basic spline interpolation, as well as pill capsule rigged vertices with skeleton inverse kinematics. In addition, there is a surface wave equation animation to create a ripple effect.
+                    <br>&nbsp;<p> 
+                        Click <a href="projects/graphics.html" style="text-shadow: 0 0 2px #FFC23C"  onMouseOver="this.style.color='#0FF'" onMouseOut="this.style.color='#FFF'"> here </a> to read more as well as see photos and videos of the capabilities described above
                 </div>
             </span>
         </div>
         </span>
-        <span class="term" onclick="toggle('nc')"><p class="active-text">&nbsp;NavCog</p>
+        <span class="term" onclick="toggle('phish')"><p class="active-text">&nbsp;phish</p>
         <div class="next">
-            <span class="info" id="nc">
+            <span class="info" id="phish">
                 <div id="about">
-                    Research Assistant
-                    <p> Summer 2016 </p>
-                    <br>
-                    <p> Supported development and testing of a tool to allow the visually impaired accurately and reliably navigate inside buildings. Performed data collection and analysis to enable accurate localization. Deployed and managed BLE beacons to allow for accurate location services in indoor spaces. Configured server to allow for real-time beacon data collection. Contributed to software develop- ment for iPhone app.
-                    </p>
-                    <p>
-                    Tools: Objective-C, Python, bash, PHP 
-                    <a href="http://www.cs.cmu.edu/~NavCog/navcog.html"> click</a> to read more about the current state of the NavCog project!
-                    </p>
-                </div>
-            </span>
-        </div>
-        </span>
-        <span class="term" onclick="toggle('cra')"><p class="active-text">&nbsp;Charles River Analytics</p>
-        <div class="next">
-            <span class="info" id="cra">
-                <div id="about">
-                    Software Development Intern
-                    <p> Summer 2017 </p>
-                    <br>
-                    <p> Worked with a team of scientists and engineers to enhance a state-of-the-art user-centered enterprise system based using the Electron Platform. Implement features across a full JavaS- cript web application stack, with a focus on front-end develop- ment. Engaged with users and senior engineers and identify refinements to the legacy products Investigated defects and proposed and implemented enhancements to existing features. Developed software for both web applications and desktop applications.
-                    </p>
-                    <p>
-                    Tools: JavaScript, React, Node.js, Electron WebGL </p>
-                </div>
-            </span>
-        </div>
-        </span>
+                    <p> Final project for 15-112 class, a short themed game
 
+                    <br>&nbsp;<p>
+                        Written in Python, the game is a simple top-down shooter that follows the avatar of a "Phishing" virus whose goal is to steal information from a user.
+                    <br>&nbsp;<p>
+                        The visuals for the game are done entirely in Python's native GUI Tkinter library. Though not inherently a great graphics package, the game showcases the ability to create a visually interesting product with simple graphical tools.
+                    <br>&nbsp;<p>
+                        Click <a href="projects/phish.html" style="text-shadow: 0 0 2px #FFC23C"  onMouseOver="this.style.color='#0FF'" onMouseOut="this.style.color='#FFF'"> here</a> to read more and see a video of the project in action</p>
+                </div>
+            </span>
+        </div>
+        </span>
+        <span class="term" onclick="toggle('snap')"><p class="active-text">&nbsp;SNAP</p>
+        <div class="next">
+            <span class="info" id="snap">
+                <div id="about">
+                    <p> Sound-based Navigational Assitant Project, my final project for 11-291 class
+
+                    <br>&nbsp;<p>
+                        A short proof of concept application developed in collaboration with <a href="https://www.linkedin.com/in/nhiehle/" style="text-shadow: 0 0 2px #FFC23C"  onMouseOver="this.style.color='#0FF'" onMouseOut="this.style.color='#FFF'"> Nolan Hiehle</a>
+                    <br>&nbsp;<p>
+                        The basic functionality involves the user wearing a smart phone on their head, aided by locational sound transmitted via headphones implemented using a Head-Related Transfer Function, to help orient within 3D space. 
+                    <br>&nbsp;<p>
+                        Click <a href="projects/snap.html" style="text-shadow: 0 0 2px #FFC23C"  onMouseOver="this.style.color='#0FF'" onMouseOut="this.style.color='#FFF'"> here</a> to read more</p>
+                </div>
+            </span>
+        </div>
+        </span>
+        <span class="term" onclick="toggle('cgp')"><p class="active-text">&nbsp;computer_game_programming</p>
+        <div class="next">
+            <span class="info" id="cgp">
+                <div id="about">
+                    <p> Various short games created for the eponymous class.
+                    <br>&nbsp;<p>
+                        Each game follows a framework, built from scratch in C++ using OpenGL and GLSL. the games implement a variety of features found in fame engines including scene loading, walkmeshes, sound, and advanced shaders. 
+                    <br>&nbsp;<p>
+                        Click <a href="projects/cgp.html" style="text-shadow: 0 0 2px #FFC23C"  onMouseOver="this.style.color='#0FF'" onMouseOut="this.style.color='#FFF'"> here</a> to see the collection of games </p>
+                </div>
+            </span>
+        </div>
+        </span>
     </div>
+    <div class="spacer"> </div>
     <script type="text/javascript" src="js/main.js"></script>
-    <div id="header"><center>jamesgualtieri.com v0.0.1</center></div>
+    <div id="header"><center>jamesgualtieri.com v0.0.1 TODO: add other projects</center></div>
     <div id="footer"> <center> USE ARROW KEYS TO NAVIGATE, RET TO EXPAND, AND ESC TO MINIMIZE
-    <div> (you can also click if want)</div> </center></div>
+    <div> (you can also click if want) </div> </center></div>
 </body>
 </html>

@@ -2,40 +2,31 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="../css/only-90s-kids.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="../media/icon.png">
-    <title>SNAP</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/scanny-boi.css" rel="stylesheet" type="text/css">
+    <link href="../css/projects.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../media/phish_thumb.png">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <title>~/projects/snap/</title>
 </head>
-<body style="background-image:url(../media/tile.gif); background-size: 5vw;">
-    <div id="header"> 
-        <center class="big">SNAP</center>
-        <!-- <center style="font-size: 1vh;">www.jamesgualtieri.com v1.0.0</center> -->
-        <table class="nav-bar">
-            <tr>
-                <td>
-                    <span>
-                    <a href="../index.html" class="unformatted">Home</a>
-                </span>
-            </td>
-            <td>
-                <span class="nav-drop"> <a style="text-decoration: none;" href="../projects.html" class="unformatted"> Other Projects </a>
-                    <div class="nav-drop-content"> 
-                        <div>
-                            <a href="cgp.html"> Computer Game Programming </a>
-                        </div>
-                        <div>
-                            <a href="graphics.html"> Scotty3D </a>
-                        </div>
-                        <div>
-                            <a href="phish.html"> Phish </a>
-                        </div>
-                    </div>
-                </span>
-            </td>
-            </tr>
-        </table>
+<body style="margin-top:0px; background-color: black; color: white;" onkeydown="sub_navigate(event)">
+    <div class="site-bar">
+        <h2>&emsp;
+            <a href = "../index.html">
+                <span class="home-button"> <span> </span> </span> 
+            </a> / 
+            <span class="other-button">
+            <a href = "../projects.html">
+                projects
+            </a>
+            </span>
+        </h2>
     </div>
-    <div id="text-body">
+    <div style="position: absolute; margin-top: 100px; width: 90%; margin-left: 5%; margin-right: 5%;">
+    <center>
+        <h1 style="font-size: 48pt"> Sound-based Navigational Assitant Project (SNAP)</h1>
+    </center>
+    <div class="write-up">
         <p>
             This is my final project for CMU's Applied Computational Intelligence Lab class, 11-291.
         <p>
@@ -52,28 +43,34 @@
             The completed application also utilizes a bluetooth remote in the form of a Nintendo joy-con to help position the user based on movement, as the head tracking of the phone is limited to orbit controls. (Meaning the user must record when taking steps with the controller for the sound-location to be accurate)
         <div style="margin-left: 10%; margin-right: 10%;" >
             <center>
+            <div class="thing2">
             <center>
                 <img src="../media/snap_head.png" />
                 <br> basic setup
             </center>
+            </div>
             </center>
             <center>
+            <div class="thing2">
             <center>
                 <img src="../media/snap_hrtf.png" />
                 <br> HRTF visualized
             </center> 
+            </div>
             <br>
             </center>
         </div>
         SNAP was mostly a proof of concept of the capabilities of such a project, but the implications of the technology could be extended to various realms. One such idea we had come up with was to use the sound-location ability to help a sight-impared user navigate a building in real life, using various tones to indicate where walls and doorways exist.
         <div style="margin-left: 10%; margin-right: 10%;" >
             <center>
+            <div class="thing2">
                 <img src="../media/snap_extend.png" />
                 <br> extending the project
+            </div>
             </center>
         </div>
+        <br />
     </div>
-    <dir id="shoe">
-            www.jame&#115;&#32;g&#117;&#97;ltie&#114;i.com v1.0.0
-    </dir>
+    <script type="text/javascript" src="../js/main.js"></script>
 </body>
+</html>
