@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="css/only-90s-kids.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="media/icon.png">
+    <link href="/css/only-90s-kids.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/media/icon.png">
     <title>James!</title>
 </head>
 <!-- 
@@ -34,7 +34,7 @@ I made it (myself!)
 enjoy!
 --> 
 <!-- <body style="background-image:url(media/tile.gif);"> -->
-<body style="background-image:url(media/bouncy.gif);">
+<body style="background-image:url(/media/bouncy.gif);">
     <div id="header"> 
         <center class="big">Welcome!</center>
         <!-- <center style="font-size: 1vh;">www.jamesgualtieri.com v1.0.0</center> -->
@@ -105,7 +105,12 @@ enjoy!
         </p>
     </div>
     <dir id="shoe">
-            www.jame&#115;&#32;g&#117;&#97;ltie&#114;i.com v1.0.0
+            www.jame&#115;&#32;g&#117;&#97;ltie&#114;i.com v
+            <select onchange="location=this.value">
+                <option value='index.html'>1.0.1 </option>
+                <option value='tui'>0.0.1</option>
+            </select>
+
     </dir>
 </body>
 </html>

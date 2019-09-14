@@ -2,10 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="../css/main.css" rel="stylesheet" type="text/css">
-    <link href="../css/scanny-boi.css" rel="stylesheet" type="text/css">
-    <link href="../css/projects.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="../media/3d_thumb.png">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/scanny-boi.css" rel="stylesheet" type="text/css">
+    <link href="/css/projects.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/media/3d_thumb.png">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <title>~/projects/graphics/</title>
 </head>
@@ -37,17 +37,17 @@
 
 		<center style = "width: 100%">
 		<div class="thing"> <center>
-			<img src="../media/apple.png" />
+			<img src="/media/apple.png" />
 			<br> Roughly Edited Mesh
 		</center></div>
 		<div class="thing"> <center>
-			<img src="../media/apple-subdiv.png" />
+			<img src="/media/apple-subdiv.png" />
 			<br> After 2 Iterations of Catmull-Clark Subdivision
 		</center></div>
         <canvas id="cv" width=1280 height=960> It seems you are using an outdated browser that does not support canvas :-( </canvas> 
-        <script type="text/javascript" src="../js/jsc3d.js"></script> 
-        <script type="text/javascript" src="../js/jsc3d.touch.js"></script> 
-        <script type="text/javascript"> var viewer = new JSC3D.Viewer(document.getElementById('cv')); viewer.setParameter('SceneUrl', '../media/mesh.obj'); viewer.setParameter('ModelColor', '#CFCFCF'); viewer.setParameter('BackgroundColor1', '#E5D7BA'); viewer.setParameter('BackgroundColor2', '#383840'); viewer.setParameter('RenderMode', 'smooth'); viewer.init(); viewer.update(); </script> 
+        <script type="text/javascript" src="/js/jsc3d.js"></script> 
+        <script type="text/javascript" src="/js/jsc3d.touch.js"></script> 
+        <script type="text/javascript"> var viewer = new JSC3D.Viewer(document.getElementById('cv')); viewer.setParameter('SceneUrl', '/media/mesh.obj'); viewer.setParameter('ModelColor', '#CFCFCF'); viewer.setParameter('BackgroundColor1', '#E5D7BA'); viewer.setParameter('BackgroundColor2', '#383840'); viewer.setParameter('RenderMode', 'smooth'); viewer.init(); viewer.update(); </script> 
         the model itself (if your browser supports WebGL)
 		</center>
 		&nbsp;
@@ -59,21 +59,21 @@
 		<div style="margin-left: 10%; margin-right: 10%;" >
 		<center>
 		<div class="thing"> <center>
-			<img src="../media/lucy_mesh.png" />
+			<img src="/media/lucy_mesh.png" />
 			<br> Polygonal Mesh
 		</center></div>
         <div class="thing"> <center>
-            <img src="../media/bvh.gif" />
+            <img src="/media/bvh.gif" />
             <br> BVH Generated
             </center></div>
 		<div class="thing"> <center>
-			<img src="../media/lucy_render.png" />
+			<img src="/media/lucy_render.png" />
 			<br> final render
 		</center> 
 		</div>
 		<br>
 		<div class="thing">
-			<img src="../media/glass.png" />
+			<img src="/media/glass.png" />
 			<br> Glass Sphere with environmental light map
 		</div>
 		</center>
@@ -84,7 +84,7 @@
 		Finally, the project concludes with an simple mesh animation set of tools. Features include motion paths with cubic spline interpolation, wave functions on a mesh surface, and pill capsule bound animation rigs with inverse kinematics
 		<center>
 		<video width="320" height="240" controls>
-  			<source src="../media/animation.mp4" type="video/mp4">
+  			<source src="/media/animation.mp4" type="video/mp4">
   		</video>
   		<br>
   		A simple animation showcasing the Cubic Spline Paths
@@ -95,6 +95,6 @@
 	<script src="js/box.js"></script> -->
 	
 	</div>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
 </body>
 </html>

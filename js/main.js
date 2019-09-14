@@ -96,7 +96,7 @@ function toggle_open() {
         window.location.href = "index.html";
     }
     else if (elem == resume) {
-        window.location.href = "media/resume.pdf";
+        window.location.href = "/media/resume.pdf";
     }
     else if (elem == exp) {
         window.location.href = "experience.html";
@@ -127,7 +127,7 @@ function toggle(id) {
         window.location.href = "experience.html";
     }
     else if (id == "resume") {
-        window.location.href = "media/resume.pdf";
+        window.location.href = "/media/resume.pdf";
     }
     else if (elem.style.display == "block") {
         elem.style.display = "none";

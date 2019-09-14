@@ -2,18 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="css/terminal.css" rel="stylesheet" type="text/css">
-    <link href="css/scanny-boi.css" rel="stylesheet" type="text/css">
-    <title> $HOME </title>
-    <link rel="icon" href="media/icon.png">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="/css/scanny-boi.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/media/icon.png">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <title>~/projects/</title>
 </head>
-<body>
-    <div id="header"> 
-        <center> <a href="simple.html"> www.jamesgualtieri.com v1.0.1 </a>
-        </center> 
-    </div>
-    <svg class="cool-overlay" width = "100%" height = "100%" style="">
+<body onkeydown="navigate(event)">
+    <svg class="cool-overlay" width = "100%" height = "100%" style="overflow: visible;">
         <rect width="100%" height="2%" y="0%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.2" />
         <rect width="100%" height="2%" y="5%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.2" />
         <rect width="100%" height="2%" y="10%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.2" />
@@ -55,63 +51,61 @@
         <rect class="slide18" width="1%" height="4%" y="91%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.2" />
         <rect class="slide19" width="1%" height="4%" y="96%" style="fill:rgb(100,100,100);stroke-width:0;fill-opacity:0.2" />
     </svg>
-    <div id="terminal">
-        <div id="std_out">
-            <div class="line">Current Work:
-                <br> Software Development Engineer
-                <br> Amazon AWS 
-                <br>
+    <div id="div1">
+        <span class="term-active" onclick="toggle('home')"><p class="active-text" id="but-home">&nbsp;home</p>
+            <div class="next-active"> 
+                <span class="info" id="home">&nbsp;</span>
             </div>
-            <div class="line">
-            <div class="line">to read up on an experience, use command 'cat {experience}'</div>
-            <div class="line"><br></div>
+        </span>
+        <span class="term" onclick="toggle('aws')"><p class="active-text">&nbsp;Amazon</p>
+        <div class="next">
+            <span class="info" id="aws">
+                <div id="about">
+                Software Development Engineer
+                <p> July 2019 - present </p>
+                <p>
+                Working within the Amazon Web Services umbrella, developing internal 
+                tools and systems.
+                </div>
+            </span>
         </div>
+        </span>
+        <span class="term" onclick="toggle('mt')"><p class="active-text">&nbsp;ManTech</p>
+        <div class="next">
+            <span class="info" id="mt">
+                <div id="about">
+                    Security Research Intern
+                    <p> Summer 2018 </p>
+                    <p> Conducted security research (reverse-engineering and network forensics) against mobile platforms and support- ing infrastructure for clients and internal audits. Utilized knowledge of software, operating systems, and computer networks to detect and exploit vulnerabilities. Performed vulnerability research on embedded systems. Created plugins for existing software platforms to aid in research. 
+                    </p>
+                    <p>
+                    Tools: Python, C++, bash scripting 
+                    </p>
+                </div>
+            </span>
+        </div>
+        </span>
+        <span class="term" onclick="toggle('cmu')"><p class="active-text">&nbsp;NavCog</p>
+        <div class="next">
+            <span class="info" id="cmu">
+                <div id="about">
+                    Research Assistant
+                    <p> Summer 2016 </p>
+                    <p> Supported development and testing of a tool to allow the visually impaired accurately and reliably navigate inside buildings. Performed data collection and analysis to enable accurate localization. Deployed and managed BLE beacons to allow for accurate location services in indoor spaces. Configured server to allow for real-time beacon data collection. Contributed to software develop- ment for iPhone app.
+                    </p>
+                    <p>
+                    Tools: Objective-C, Python, bash, PHP 
+                    The NavCog Project has since continued development, reaching full deployment in the Pittsburgh International Airport.
+                    </p>
+                </div>
+            </span>
+        </div>
+        </span>
     </div>
-        <span id="prompt">[~/experience/]<br> </span>
-        <textarea id="std_in" rows="1" autofocus="true" onkeydown="return std_in()"></textarea>
-    </div>
-
-    <div style="display: none" id="ls-target">
-        <div>$HOME................................page</div>
-        <div>amazon............................writeup</div>
-        <div>mantech...........................writeup</div>
-        <div>cmu_robotics......................writeup</div>
-        <div>charles_river.....................writeup</div>
-    </div>
-
-    <div id="amazon" style="display: none">
-        Software Development Engineer
-        <p> July 2019 - present </p>
-        <p>
-            Working within the Amazon Web Services umbrella, developing internal 
-            tools and systems.
-    </div>
-    <div id="mantech" style="display: none">
-        Security Research Intern
-        <p> Summer 2018 </p>
-        <p> Conducted security research (reverse-engineering and network forensics) against mobile platforms and support- ing infrastructure for clients and internal audits. Utilized knowledge of software, operating systems, and computer networks to detect and exploit vulnerabilities. Performed vulnerability research on embedded systems. Created plugins for existing software platforms to aid in research. 
-        </p>
-        <p>
-        Tools: Python, C++, bash scripting 
-        </p>
-    </div>
-    <div id="cmu_robotics" style="display: none">
-        Research Assistant
-        <p> Summer 2016 </p>
-        <p> Supported development and testing of a tool to allow the visually impaired accurately and reliably navigate inside buildings. Performed data collection and analysis to enable accurate localization. Deployed and managed BLE beacons to allow for accurate location services in indoor spaces. Configured server to allow for real-time beacon data collection. Contributed to software develop- ment for iPhone app.
-        </p>
-        <p>
-        Tools: Objective-C, Python, bash, PHP 
-        The NavCog Project has since continued development, reaching full deployment in the Pittsburgh International Airport.
-        </p>
-    </div>
-    <div id="charles_river" style="display: none">
-        Software Development Intern
-        <p> Summer 2017 </p>
-        <p> Worked with a team of scientists and engineers to enhance a state-of-the-art user-centered enterprise system based using the Electron Platform. Implement features across a full JavaS- cript web application stack, with a focus on front-end develop- ment. Engaged with users and senior engineers and identify refinements to the legacy products Investigated defects and proposed and implemented enhancements to existing features. Developed software for both web applications and desktop applications.
-        </p>
-        <p>
-        Tools: JavaScript, React, Node.js, Electron WebGL </p>
-    </div>
-    <script type="text/javascript" src="js/beep_boop.js" > </script>
+    <div class="spacer"> </div>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <div id="header"><center>jamesgualtieri.com v0.0.1 TODO: add other projects</center></div>
+    <div id="footer"> <center> USE ARROW KEYS TO NAVIGATE, RET TO EXPAND, AND ESC TO MINIMIZE
+    <div> (you can also click if want) </div> </center></div>
 </body>
+</html>
