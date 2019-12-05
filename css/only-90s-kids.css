@@ -1,4 +1,4 @@
-@media (min-width: 769px){
+@media (min-device-width: 769px){
     body {
         background-repeat: repeat;
         background-size: 20vw;
@@ -101,7 +101,7 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px){ 
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){ 
     body {
         background-repeat: repeat;
         background-size: 12vw;
@@ -204,7 +204,7 @@
     }
 }
 
-@media (max-width: 769px){
+@media screen and (max-device-width: 769px){
     body {
         background-repeat: repeat;
         background-size: 10vw;
