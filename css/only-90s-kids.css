@@ -89,6 +89,7 @@
         position: fixed;
         text-align: center;
         bottom: 0;
+        font-size: 1.2vw;
     }
 
     .thing{    
@@ -192,6 +193,7 @@
         position: fixed;
         text-align: center;
         bottom: 0;
+        font-size: 4vw;
     }
 
     .thing{    
@@ -204,7 +206,7 @@
     }
 }
 
-@media screen and (max-device-width: 769px){
+@media screen and (max-device-=-width: 769px){
     body {
         background-repeat: repeat;
         background-size: 10vw;
@@ -296,6 +298,7 @@
         position: fixed;
         text-align: center;
         bottom: 0;
+        font-size: 3vw;
     }
 
     .thing{    
