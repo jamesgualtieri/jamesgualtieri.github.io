@@ -1,7 +1,7 @@
-# Simple Terminal Style Site
+# personal website time
 
 Github kept asking me to make a readme file so here it is.
 
-Website is p simple.
+whoops i redeisigned my whole website and now i use react? wild
 
-Basically it's just a lil old website with some TUI inspired styling and functionality. If you're reading this, hey nice to meet you my name is James and I like to code. :)
+src is in src folder (crazy, i know)
